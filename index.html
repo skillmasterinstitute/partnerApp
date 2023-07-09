@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SMI Partner">
+
+  
+
+  <meta name="robots" content="noindex" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.final.png" sizes="any"/>
+  
+
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="SMI Partner " />
+  <meta property="og:description" content="SMI Partner " />
+  <meta property="og:image" content="/assets/assets/images/logo.final_.png" /> 
+  <meta name="twitter:title" content="SMI Partner " />
+  <meta name="twitter:description" content="SMI Partner " />
+  <meta name="twitter:image" content="/assets/assets/images/logo.final_.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title> SMI Partner  </title>
+  <meta name="description" content="SMI Partner " />
+    
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=475329761');
+      });
+    }
+    
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/build/pdf.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/build/pdf.worker.min.js";
+    pdfRenderOptions = {
+      cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/cmaps/',
+      cMapPacked: true,
+    }
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCul6tkr9mCVcNFKQg18YtAIemHj0oRGtI",
+      authDomain: "partnerapp-7a29f.firebaseapp.com",
+      projectId: "partnerapp-7a29f",
+      storageBucket: "partnerapp-7a29f.appspot.com",
+      messagingSenderId: "113627942917",
+      appId: "1:113627942917:web:90f3e02a3956ed0af88c6c",
+      measurementId: "G-9JX9JM4PRC"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+        
+  
+  
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
